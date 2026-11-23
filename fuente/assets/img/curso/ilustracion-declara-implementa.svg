@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img"
+     aria-label="Dos tarjetas unidas por una línea punteada que se corta a mitad de camino. En la primera, un documento con sello de aprobado; en su primera fila, un símbolo de diana amarillo. En la segunda, un aula: un docente junto a una pizarra llena de texto y tres estudiantes de espaldas, tomando apuntes; en la pizarra, el lugar de la diana está vacío, con borde punteado. Debajo, los rótulos: lo que se declara y lo que se implementa.">
+  <!-- Ilustración de marca · Universidad Andina Virtual · gov-u01-dcc · tema 1 (cuerpo, 1.1, en el tramo de
+       párrafos que sigue a las pestañas de Posner: después de P111, antes de P113)
+       Concepto (DI, P111): «¿Qué tendría que revisar si una institución afirma formar por competencias, pero
+       sus asignaturas, actividades y evaluaciones continúan organizadas únicamente alrededor de la transmisión
+       de contenidos? La respuesta exige ir más allá de revisar si el término competencia aparece en el
+       documento: es necesario analizar si existe coherencia entre lo que se declara, lo que se implementa…»
+       Con P99 («lo que se declara en los documentos aprobados») y P118 («posibles brechas entre el currículo
+       formal y su desarrollo real»). La diana es el icono de «Competencia» de la Figura 1 del diseñador.
+       Rótulos: fragmentos literales de P111. Guion en insumos/ILUSTRACIONES.md.
+       Único amarillo: la competencia declarada en el documento. Sin estrella: las fotos de la pantalla
+       ya la traen. -->
+  <defs>
+    <linearGradient id="ilu-declara-implementa-fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#E6F3FA"/>
+      <stop offset="55%"  stop-color="#E8EDF5"/>
+      <stop offset="100%" stop-color="#F5F8FB"/>
+    </linearGradient>
+    <filter id="ilu-declara-implementa-sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#132B41" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="400" rx="18" fill="url(#ilu-declara-implementa-fondo)"/>
+
+  <!-- Las dos tarjetas -->
+  <g filter="url(#ilu-declara-implementa-sombra)" fill="#FFFFFF">
+    <rect x="120" y="40" width="360" height="256" rx="16"/>
+    <rect x="720" y="40" width="360" height="256" rx="16"/>
+  </g>
+
+  <!-- ══ Entre las dos: la línea que debería unirlas, cortada (la brecha) ══ -->
+  <g stroke="#00417B" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 12" opacity=".55">
+    <line x1="500" y1="168" x2="566" y2="168"/>
+    <line x1="634" y1="168" x2="700" y2="168"/>
+  </g>
+  <g stroke="#132B41" stroke-width="3" stroke-linecap="round" opacity=".3">
+    <line x1="580" y1="154" x2="590" y2="182"/>
+    <line x1="610" y1="154" x2="620" y2="182"/>
+  </g>
+
+  <!-- ══ Lo que se declara: el documento aprobado ══ -->
+  <rect x="216" y="60" width="168" height="216" rx="8" fill="#E8EDF5" stroke="#00417B" stroke-width="2.5"/>
+  <rect x="232" y="76" width="70" height="9" rx="4.5" fill="#00417B" opacity=".55"/>
+  <!-- la competencia, declarada: ÚNICO AMARILLO -->
+  <circle cx="246" cy="118" r="15" fill="#F0B443"/>
+  <circle cx="246" cy="118" r="9" fill="none" stroke="#132B41" stroke-width="2.5"/>
+  <circle cx="246" cy="118" r="3" fill="#132B41"/>
+  <g fill="#132B41" opacity=".22">
+    <rect x="270" y="110" width="96" height="7" rx="3.5"/>
+    <rect x="270" y="122" width="70" height="7" rx="3.5"/>
+    <rect x="232" y="152" width="134" height="7" rx="3.5"/>
+    <rect x="232" y="168" width="112" height="7" rx="3.5"/>
+    <rect x="232" y="184" width="126" height="7" rx="3.5"/>
+    <rect x="232" y="200" width="96" height="7" rx="3.5"/>
+  </g>
+  <!-- sello de aprobado -->
+  <circle cx="340" cy="244" r="20" fill="none" stroke="#00417B" stroke-width="3"/>
+  <path d="M331 244 l6 6 l12 -13" fill="none" stroke="#00417B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="232" y1="252" x2="296" y2="252" stroke="#132B41" stroke-width="2.5" stroke-linecap="round" opacity=".35"/>
+
+  <!-- ══ Lo que se implementa: el aula ══ -->
+  <!-- la pizarra, llena de contenidos -->
+  <rect x="808" y="58" width="252" height="128" rx="8" fill="#132B41"/>
+  <rect x="808" y="186" width="252" height="7" rx="3" fill="#585B5F" opacity=".5"/>
+  <!-- donde iría la competencia: vacío -->
+  <circle cx="836" cy="86" r="15" fill="none" stroke="#B5E3EF" stroke-width="2.5" stroke-dasharray="4 5" stroke-linecap="round" opacity=".75"/>
+  <g fill="#FFFFFF" opacity=".55">
+    <rect x="862" y="80" width="150" height="6" rx="3"/>
+    <rect x="862" y="92" width="110" height="6" rx="3"/>
+    <rect x="826" y="114" width="214" height="6" rx="3"/>
+    <rect x="826" y="128" width="188" height="6" rx="3"/>
+    <rect x="826" y="142" width="206" height="6" rx="3"/>
+    <rect x="826" y="156" width="166" height="6" rx="3"/>
+    <rect x="826" y="170" width="196" height="6" rx="3"/>
+  </g>
+
+  <!-- el docente, junto a la pizarra -->
+  <circle cx="768" cy="112" r="15" fill="#00417B"/>
+  <path d="M746 196 L746 150 Q746 132 768 132 Q790 132 790 150 L790 196 Z" fill="#00417B"/>
+  <path d="M786 146 L816 128" stroke="#00417B" stroke-width="7" stroke-linecap="round"/>
+  <line x1="814" y1="129" x2="834" y2="118" stroke="#3A93D0" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- tres estudiantes de espaldas, tomando apuntes -->
+  <g fill="#3A93D0">
+    <circle cx="840" cy="222" r="14"/>
+    <path d="M816 270 Q816 240 840 240 Q864 240 864 270 Z"/>
+    <circle cx="934" cy="222" r="14"/>
+    <path d="M910 270 Q910 240 934 240 Q958 240 958 270 Z"/>
+    <circle cx="1028" cy="222" r="14"/>
+    <path d="M1004 270 Q1004 240 1028 240 Q1052 240 1052 270 Z"/>
+  </g>
+  <rect x="800" y="270" width="268" height="8" rx="4" fill="#84C9BF"/>
+  <g fill="#FFFFFF" stroke="#00417B" stroke-width="2">
+    <rect x="856" y="258" width="22" height="13" rx="2"/>
+    <rect x="950" y="258" width="22" height="13" rx="2"/>
+    <rect x="1044" y="258" width="22" height="13" rx="2"/>
+  </g>
+
+  <!-- Los rótulos: las palabras del párrafo -->
+  <g font-family="Manrope, system-ui, sans-serif" font-size="17" font-weight="600" fill="#132B41" text-anchor="middle">
+    <text x="300" y="346">lo que se declara</text>
+    <text x="900" y="346">lo que se implementa</text>
+  </g>
+</svg>

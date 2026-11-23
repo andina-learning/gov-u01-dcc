@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img"
+     aria-label="Una tabla con la hoja de una decisión firmada encima, apoyada sobre dos patas. La pata de la izquierda es una pila de libros de leyes con una balanza en el lomo; la de la derecha es una pila amarilla de informes con una hoja al frente que muestra un gráfico de barras y una lupa. Debajo, los rótulos: referente normativo y análisis técnico.">
+  <!-- Ilustración de marca · Universidad Andina Virtual · gov-u01-dcc · tema 1 (cuerpo, 1.2, después de P344 y
+       antes del destacado «Criterio de aceptación» de P349)
+       Concepto (DI, P338): «Cumplir una disposición normativa no demuestra por sí solo la pertinencia de una
+       decisión curricular. Esta debe sustentarse mediante una doble justificación: el referente normativo que
+       la establece, permite o condiciona y el análisis técnico que explica por qué resulta pertinente para el
+       programa, el contexto y el perfil de egreso.» Con P349 («¿qué referente normativo debe considerarse y por
+       qué esta decisión es técnicamente pertinente para el programa?»).
+       Rótulos: fragmentos literales de P338. Guion en insumos/ILUSTRACIONES.md.
+       Único amarillo: el análisis técnico, la pata que la norma sola no reemplaza. Sin estrella: las fotos de
+       la pantalla ya la traen. -->
+  <defs>
+    <linearGradient id="ilu-doble-justificacion-fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#E6F3FA"/>
+      <stop offset="55%"  stop-color="#E8EDF5"/>
+      <stop offset="100%" stop-color="#F5F8FB"/>
+    </linearGradient>
+    <filter id="ilu-doble-justificacion-sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#132B41" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="400" rx="18" fill="url(#ilu-doble-justificacion-fondo)"/>
+
+  <!-- El suelo -->
+  <line x1="300" y1="298" x2="900" y2="298" stroke="#132B41" stroke-width="3" stroke-linecap="round" opacity=".18"/>
+
+  <!-- ══ La decisión curricular, sobre el tablero ══ -->
+  <rect x="340" y="108" width="520" height="26" rx="8" fill="#FFFFFF" filter="url(#ilu-doble-justificacion-sombra)"/>
+  <rect x="340" y="108" width="520" height="26" rx="8" fill="none" stroke="#00417B" stroke-width="2.5"/>
+  <!-- la hoja de la decisión, firmada -->
+  <g transform="rotate(-4 600 70)">
+    <rect x="520" y="30" width="160" height="80" rx="8" fill="#E8EDF5" stroke="#00417B" stroke-width="2.5"/>
+    <rect x="536" y="44" width="54" height="8" rx="4" fill="#00417B" opacity=".55"/>
+    <g fill="#132B41" opacity=".22">
+      <rect x="536" y="62" width="126" height="6" rx="3"/>
+      <rect x="536" y="74" width="98" height="6" rx="3"/>
+    </g>
+    <path d="M600 98 c 5 -12, 10 -12, 12 -3 s 5 8, 10 -3 s 8 -9, 10 1 s 7 7, 14 -4"
+          fill="none" stroke="#00417B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ══ Pata izquierda: el referente normativo (libros de leyes) ══ -->
+  <g>
+    <rect x="404" y="134" width="152" height="34" rx="5" fill="#00417B"/>
+    <rect x="412" y="168" width="140" height="32" rx="5" fill="#156190"/>
+    <rect x="400" y="200" width="156" height="34" rx="5" fill="#113657"/>
+    <rect x="408" y="234" width="146" height="32" rx="5" fill="#00417B"/>
+    <rect x="402" y="266" width="154" height="32" rx="5" fill="#156190"/>
+    <g fill="#FFFFFF" opacity=".35">
+      <rect x="420" y="146" width="6" height="10" rx="2"/><rect x="534" y="146" width="6" height="10" rx="2"/>
+      <rect x="428" y="179" width="6" height="10" rx="2"/><rect x="530" y="179" width="6" height="10" rx="2"/>
+      <rect x="416" y="212" width="6" height="10" rx="2"/><rect x="534" y="212" width="6" height="10" rx="2"/>
+      <rect x="424" y="245" width="6" height="10" rx="2"/><rect x="532" y="245" width="6" height="10" rx="2"/>
+      <rect x="418" y="277" width="6" height="10" rx="2"/><rect x="534" y="277" width="6" height="10" rx="2"/>
+    </g>
+    <!-- la balanza de la ley, en el lomo del libro central -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="478" y1="206" x2="478" y2="228"/>
+      <line x1="462" y1="210" x2="494" y2="210"/>
+      <path d="M462 210 l-6 10 h12 Z"/>
+      <path d="M494 210 l-6 10 h12 Z"/>
+      <line x1="470" y1="228" x2="486" y2="228"/>
+    </g>
+  </g>
+
+  <!-- ══ Pata derecha: el análisis técnico (informes) · ÚNICO AMARILLO: la pila ══ -->
+  <g fill="#F0B443">
+    <rect x="644" y="134" width="152" height="34" rx="5"/>
+    <rect x="650" y="168" width="142" height="32" rx="5"/>
+    <rect x="642" y="200" width="154" height="34" rx="5"/>
+    <rect x="648" y="234" width="146" height="32" rx="5"/>
+    <rect x="644" y="266" width="152" height="32" rx="5"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="2.5" opacity=".7">
+    <line x1="648" y1="168" x2="792" y2="168"/>
+    <line x1="648" y1="200" x2="792" y2="200"/>
+    <line x1="648" y1="234" x2="792" y2="234"/>
+    <line x1="648" y1="266" x2="792" y2="266"/>
+  </g>
+  <!-- la hoja del análisis, al frente: gráfico de barras y lupa -->
+  <rect x="664" y="160" width="112" height="112" rx="8" fill="#FFFFFF" stroke="#132B41" stroke-width="2.5"/>
+  <g fill="#00417B">
+    <rect x="680" y="228" width="14" height="24" rx="2"/>
+    <rect x="700" y="212" width="14" height="40" rx="2"/>
+    <rect x="720" y="196" width="14" height="56" rx="2"/>
+  </g>
+  <line x1="676" y1="254" x2="740" y2="254" stroke="#132B41" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="748" cy="192" r="14" fill="#E8EDF5" stroke="#132B41" stroke-width="3"/>
+  <line x1="758" y1="202" x2="768" y2="213" stroke="#132B41" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Los rótulos: las palabras del párrafo -->
+  <g font-family="Manrope, system-ui, sans-serif" font-size="17" font-weight="600" fill="#132B41" text-anchor="middle">
+    <text x="478" y="346">referente normativo</text>
+    <text x="720" y="346">análisis técnico</text>
+  </g>
+</svg>
