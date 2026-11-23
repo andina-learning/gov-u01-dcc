@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img"
+     aria-label="Dos tarjetas unidas por una flecha. En la primera, lo que muestra el contexto: una pequeña tienda con toldo y una persona en la puerta con una tableta en la mano, y a su lado un grupo de tres personas de la comunidad. En la segunda, el perfil de egreso: su primera fila, con un gran hotel de muchas ventanas, está atenuada y rodeada por una línea punteada; debajo, una fila nueva en amarillo con una pequeña tienda. Debajo, los rótulos: hallazgos del contexto y perfil de egreso.">
+  <!-- Ilustración de marca · Universidad Andina Virtual · gov-u01-dcc · tema 2 (cuerpo, 2.1, entre P615 y P617)
+       Concepto (DI, P615): «El análisis del contexto debe influir directamente en las decisiones sobre el perfil de
+       egreso. Por ejemplo, si un programa de Administración en Turismo identifica que sus egresados trabajan
+       principalmente en pequeñas y medianas empresas, interactúan con comunidades locales y utilizan herramientas
+       digitales, estos hallazgos podrían justificar la revisión de competencias orientadas exclusivamente a la
+       gestión de grandes establecimientos hoteleros.» Con P617 («reformular competencias o incorporar otras
+       relacionadas con la gestión de empresas de menor escala»).
+       Rótulos: «hallazgos del contexto» (P617) y «perfil de egreso» (P615), literales.
+       Único amarillo: la competencia reformulada, la decisión que el hallazgo justifica.
+       Sin estrella: la pantalla ya la trae. Guion en insumos/ILUSTRACIONES.md. -->
+  <defs>
+    <linearGradient id="ilu-hallazgos-perfil-fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#E6F3FA"/>
+      <stop offset="55%"  stop-color="#E8EDF5"/>
+      <stop offset="100%" stop-color="#F5F8FB"/>
+    </linearGradient>
+    <filter id="ilu-hallazgos-perfil-sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#132B41" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="400" rx="18" fill="url(#ilu-hallazgos-perfil-fondo)"/>
+
+  <!-- Las dos tarjetas -->
+  <g filter="url(#ilu-hallazgos-perfil-sombra)" fill="#FFFFFF">
+    <rect x="120" y="40" width="360" height="256" rx="16"/>
+    <rect x="720" y="40" width="360" height="256" rx="16"/>
+  </g>
+
+  <!-- La flecha: el contexto influye en el perfil -->
+  <g stroke="#3A93D0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="520" y1="168" x2="674" y2="168"/>
+    <path d="M660 154 L676 168 L660 182"/>
+  </g>
+
+  <!-- ══ Tarjeta 1 · los hallazgos del contexto ══ -->
+  <g transform="translate(0 -22)">
+  <line x1="148" y1="262" x2="452" y2="262" stroke="#132B41" stroke-width="2.5" stroke-linecap="round" opacity=".18"/>
+  <!-- una pequeña empresa: tienda con toldo -->
+  <rect x="152" y="150" width="128" height="112" rx="4" fill="#E8EDF5" stroke="#00417B" stroke-width="2.5"/>
+  <path d="M146 122 H286 L280 150 H152 Z" fill="#00417B"/>
+  <g fill="#FFFFFF" opacity=".5">
+    <rect x="170" y="122" width="14" height="28"/>
+    <rect x="198" y="122" width="14" height="28"/>
+    <rect x="226" y="122" width="14" height="28"/>
+    <rect x="254" y="122" width="14" height="28"/>
+  </g>
+  <rect x="166" y="168" width="44" height="34" rx="3" fill="#FFFFFF" stroke="#00417B" stroke-width="2"/>
+  <rect x="226" y="176" width="40" height="86" rx="3" fill="#FFFFFF" stroke="#00417B" stroke-width="2"/>
+  <!-- la persona egresada que trabaja en ella, con una tableta -->
+  <circle cx="314" cy="170" r="14" fill="#00417B"/>
+  <path d="M294 262 L294 206 Q294 188 314 188 Q334 188 334 206 L334 262 Z" fill="#00417B"/>
+  <rect x="320" y="206" width="26" height="34" rx="4" fill="#FFFFFF" stroke="#132B41" stroke-width="2.5"/>
+  <rect x="325" y="212" width="16" height="18" rx="1.5" fill="#3A93D0" opacity=".6"/>
+  <!-- la comunidad local -->
+  <g fill="#84C9BF">
+    <circle cx="378" cy="196" r="12"/>
+    <path d="M360 262 L360 228 Q360 212 378 212 Q396 212 396 228 L396 262 Z"/>
+    <circle cx="428" cy="196" r="12"/>
+    <path d="M410 262 L410 228 Q410 212 428 212 Q446 212 446 228 L446 262 Z"/>
+  </g>
+  <g fill="#3A93D0">
+    <circle cx="403" cy="210" r="11"/>
+    <path d="M387 262 L387 240 Q387 226 403 226 Q419 226 419 240 L419 262 Z"/>
+  </g>
+  </g>
+
+  <!-- ══ Tarjeta 2 · el perfil de egreso ══ -->
+  <rect x="790" y="58" width="220" height="222" rx="10" fill="#FFFFFF" stroke="#00417B" stroke-width="2.5"/>
+  <rect x="810" y="76" width="96" height="9" rx="4.5" fill="#00417B" opacity=".55"/>
+
+  <!-- fila 1: competencia orientada a grandes establecimientos hoteleros, en revisión -->
+  <rect x="804" y="100" width="192" height="72" rx="10" fill="none" stroke="#3A93D0" stroke-width="2.5" stroke-dasharray="6 7"/>
+  <g opacity=".45">
+    <rect x="818" y="110" width="40" height="54" rx="3" fill="#8C9AA8"/>
+    <g fill="#FFFFFF">
+      <rect x="824" y="116" width="8" height="7"/><rect x="836" y="116" width="8" height="7"/><rect x="848" y="116" width="6" height="7"/>
+      <rect x="824" y="128" width="8" height="7"/><rect x="836" y="128" width="8" height="7"/><rect x="848" y="128" width="6" height="7"/>
+      <rect x="824" y="140" width="8" height="7"/><rect x="836" y="140" width="8" height="7"/><rect x="848" y="140" width="6" height="7"/>
+      <rect x="832" y="152" width="12" height="12"/>
+    </g>
+    <g fill="#132B41" opacity=".5">
+      <rect x="872" y="122" width="108" height="7" rx="3.5"/>
+      <rect x="872" y="138" width="82" height="7" rx="3.5"/>
+    </g>
+  </g>
+
+  <!-- fila 2: la competencia reformulada · ÚNICO AMARILLO -->
+  <rect x="804" y="186" width="192" height="72" rx="10" fill="#F0B443"/>
+  <rect x="818" y="208" width="40" height="38" rx="2" fill="#FFFFFF" stroke="#132B41" stroke-width="2.5"/>
+  <path d="M814 198 H862 L859 208 H817 Z" fill="#132B41"/>
+  <rect x="832" y="226" width="12" height="20" fill="#132B41" opacity=".8"/>
+  <g fill="#132B41" opacity=".55">
+    <rect x="872" y="208" width="108" height="7" rx="3.5"/>
+    <rect x="872" y="224" width="82" height="7" rx="3.5"/>
+  </g>
+
+  <!-- Los rótulos: las palabras del DI -->
+  <g font-family="Manrope, system-ui, sans-serif" font-size="17" font-weight="600" fill="#132B41" text-anchor="middle">
+    <text x="300" y="340">hallazgos del contexto</text>
+    <text x="900" y="340">perfil de egreso</text>
+  </g>
+</svg>

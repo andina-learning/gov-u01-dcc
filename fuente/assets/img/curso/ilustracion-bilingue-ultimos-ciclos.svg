@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img"
+     aria-label="Un camino de diez baldosas, una por ciclo, y una persona al comienzo. Sobre las primeras baldosas hay lugares vacíos, con borde punteado; sobre la segunda, un solo libro. Sobre las tres últimas, un panel amarillo con tres pares de globos de diálogo: las competencias de la enseñanza en contextos bilingües. Debajo, los rótulos: segundo ciclo y últimos ciclos.">
+  <!-- Ilustración de marca · Universidad Andina Virtual · gov-u01-dcc · tema 3 (cuerpo, 3.3, entre P1046 y P1048)
+       Concepto (DI, P1044, «Reto de cierre de la unidad»): «El perfil declara nueve competencias, pero tres de las
+       relacionadas con la enseñanza en contextos bilingües aparecen principalmente en asignaturas de los últimos ciclos.
+       La matriz muestra pocas oportunidades de desarrollo temprano y el programa cuenta con una sola asignatura de
+       lengua originaria en el segundo ciclo.»
+       Rótulos: «segundo ciclo» y «últimos ciclos» (P1044), literales. El número de ciclos es esquemático: sin cifras.
+       Único amarillo: las tres competencias bilingües, juntas al final del camino.
+       Sin estrella: la pantalla ya la trae. Guion en insumos/ILUSTRACIONES.md. -->
+  <defs>
+    <linearGradient id="ilu-bilingue-ultimos-ciclos-fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#E6F3FA"/>
+      <stop offset="55%"  stop-color="#E8EDF5"/>
+      <stop offset="100%" stop-color="#F5F8FB"/>
+    </linearGradient>
+    <filter id="ilu-bilingue-ultimos-ciclos-sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#132B41" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="400" rx="18" fill="url(#ilu-bilingue-ultimos-ciclos-fondo)"/>
+  <g transform="translate(0 -18)">
+
+  <!-- El camino: una línea que une los ciclos -->
+  <line x1="196" y1="266" x2="1104" y2="266" stroke="#3A93D0" stroke-width="4" stroke-linecap="round" opacity=".35"/>
+  <!-- Diez baldosas, una por ciclo -->
+  <g fill="#FFFFFF" filter="url(#ilu-bilingue-ultimos-ciclos-sombra)">
+    <rect x="196" y="244" width="80" height="44" rx="10"/>
+    <rect x="288" y="244" width="80" height="44" rx="10"/>
+    <rect x="380" y="244" width="80" height="44" rx="10"/>
+    <rect x="472" y="244" width="80" height="44" rx="10"/>
+    <rect x="564" y="244" width="80" height="44" rx="10"/>
+    <rect x="656" y="244" width="80" height="44" rx="10"/>
+    <rect x="748" y="244" width="80" height="44" rx="10"/>
+    <rect x="840" y="244" width="80" height="44" rx="10"/>
+    <rect x="932" y="244" width="80" height="44" rx="10"/>
+    <rect x="1024" y="244" width="80" height="44" rx="10"/>
+  </g>
+  <g fill="#00417B" opacity=".18">
+    <rect x="216" y="262" width="40" height="8" rx="4"/>
+    <rect x="308" y="262" width="40" height="8" rx="4"/>
+    <rect x="400" y="262" width="40" height="8" rx="4"/>
+    <rect x="492" y="262" width="40" height="8" rx="4"/>
+    <rect x="584" y="262" width="40" height="8" rx="4"/>
+    <rect x="676" y="262" width="40" height="8" rx="4"/>
+    <rect x="768" y="262" width="40" height="8" rx="4"/>
+    <rect x="860" y="262" width="40" height="8" rx="4"/>
+    <rect x="952" y="262" width="40" height="8" rx="4"/>
+    <rect x="1044" y="262" width="40" height="8" rx="4"/>
+  </g>
+
+  <!-- Pocas oportunidades de desarrollo temprano: lugares vacíos -->
+  <g fill="none" stroke="#3A93D0" stroke-width="2.5" stroke-dasharray="5 6">
+    <rect x="205.0" y="146" width="62" height="62" rx="14"/>
+    <rect x="389.0" y="146" width="62" height="62" rx="14"/>
+    <rect x="481.0" y="146" width="62" height="62" rx="14"/>
+    <rect x="573.0" y="146" width="62" height="62" rx="14"/>
+    <rect x="665.0" y="146" width="62" height="62" rx="14"/>
+    <rect x="757.0" y="146" width="62" height="62" rx="14"/>
+  </g>
+
+  <!-- Una sola asignatura de lengua originaria, en el segundo ciclo -->
+  <g transform="translate(297.0 148) scale(1.2)">
+    <path d="M26 10 Q14 2 2 6 V46 Q14 42 26 50 Z" fill="#00417B"/>
+    <path d="M26 10 Q38 2 50 6 V46 Q38 42 26 50 Z" fill="#3A93D0"/>
+    <g stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".7">
+      <line x1="8" y1="16" x2="20" y2="18"/><line x1="8" y1="24" x2="20" y2="26"/><line x1="8" y1="32" x2="20" y2="34"/>
+      <line x1="32" y1="18" x2="44" y2="16"/><line x1="32" y1="26" x2="44" y2="24"/><line x1="32" y1="34" x2="44" y2="32"/>
+    </g>
+  </g>
+
+  <!-- ══ Las tres competencias de la enseñanza en contextos bilingües, en los últimos ciclos · ÚNICO AMARILLO ══ -->
+  <rect x="834" y="128" width="276" height="100" rx="14" fill="#F0B443" filter="url(#ilu-bilingue-ultimos-ciclos-sombra)"/>
+  <g transform="translate(844.0 150) scale(1.2)">
+    <path d="M4 4 h30 a6 6 0 0 1 6 6 v16 a6 6 0 0 1 -6 6 h-18 l-8 8 v-8 h-4 a6 6 0 0 1 -6 -6 v-16 a6 6 0 0 1 6 -6 Z" fill="#132B41"/>
+    <path d="M26 16 h28 a6 6 0 0 1 6 6 v14 a6 6 0 0 1 -6 6 h-4 v8 l-8 -8 h-16 a6 6 0 0 1 -6 -6 v-14 a6 6 0 0 1 6 -6 Z" fill="#FFFFFF" stroke="#132B41" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(936.0 150) scale(1.2)">
+    <path d="M4 4 h30 a6 6 0 0 1 6 6 v16 a6 6 0 0 1 -6 6 h-18 l-8 8 v-8 h-4 a6 6 0 0 1 -6 -6 v-16 a6 6 0 0 1 6 -6 Z" fill="#132B41"/>
+    <path d="M26 16 h28 a6 6 0 0 1 6 6 v14 a6 6 0 0 1 -6 6 h-4 v8 l-8 -8 h-16 a6 6 0 0 1 -6 -6 v-14 a6 6 0 0 1 6 -6 Z" fill="#FFFFFF" stroke="#132B41" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(1028.0 150) scale(1.2)">
+    <path d="M4 4 h30 a6 6 0 0 1 6 6 v16 a6 6 0 0 1 -6 6 h-18 l-8 8 v-8 h-4 a6 6 0 0 1 -6 -6 v-16 a6 6 0 0 1 6 -6 Z" fill="#132B41"/>
+    <path d="M26 16 h28 a6 6 0 0 1 6 6 v14 a6 6 0 0 1 -6 6 h-4 v8 l-8 -8 h-16 a6 6 0 0 1 -6 -6 v-14 a6 6 0 0 1 6 -6 Z" fill="#FFFFFF" stroke="#132B41" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Quien recorre la trayectoria, al comienzo del camino (P849) -->
+  <ellipse cx="124" cy="288" rx="40" ry="6" fill="#132B41" opacity=".08"/>
+  <circle cx="124" cy="206" r="16" fill="#3A93D0"/>
+  <path d="M100 288 L100 244 Q100 226 124 226 Q148 226 148 244 L148 288 Z" fill="#3A93D0"/>
+  <path d="M96 236 Q90 238 90 248 L90 274 Q90 280 96 280 L102 280 L102 236 Z" fill="#00417B"/>
+
+  <!-- Los rótulos: las palabras del DI -->
+  <g font-family="Manrope, system-ui, sans-serif" font-size="17" font-weight="600" fill="#132B41" text-anchor="middle">
+    <text x="328" y="350">segundo ciclo</text>
+    <text x="972" y="350">últimos ciclos</text>
+  </g>
+  </g>
+</svg>

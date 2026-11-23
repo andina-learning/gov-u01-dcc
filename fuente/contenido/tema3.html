@@ -1,13 +1,444 @@
       <header class="ova-screen__head" data-reveal>
+        <!-- Eyebrow: el numeral del tema; título: el del DI, con el numeral en el eyebrow (INSTITUCION §2), como
+             en los temas 1 y 2. Sin lead: este DI no trae tabla de propósito del tema. Sin ilustración de apertura (se
+             decide en /ova-ilustrar). -->
         <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
-        <h1 class="ova-screen__title" data-ova-hueco="título del tema, literal del DI"></h1>
-        <p class="ova-screen__lead" data-ova-hueco="propósito del tema, literal de la tabla del DI"></p>
+        <h1 class="ova-screen__title">Diseño de la malla curricular</h1>
       </header>
 
-      <!-- Una sección vacía y ningún componente: /ova-maquetar elige cada componente desde el DI
-           y agrega las secciones que falten, cada una con su ancla en el menú de ova.config.js -->
-      <section class="ua-seccion" id="tema{{NUM}}-1" data-reveal>
-        <h2 class="ua-seccion__titulo"><span data-ova-hueco="título de la sección {{NUM}}.1, literal del DI"></span></h2>
+      <!-- Banner · fondo oscuro (catálogo); el Word no trae negrilla: no se enciende ninguna parte -->
+      <div class="ova-banner" data-reveal>
+        <p class="ova-banner__frase">¿Qué debería revisar usted primero si recibe una malla curricular y necesita saber si realmente conduce al perfil de egreso?</p>
+      </div>
+
+      <p data-reveal>Contar asignaturas, revisar ciclos o verificar créditos aporta información, pero no demuestra por sí solo la coherencia. La malla representa decisiones sobre qué se aprende, cuándo, cuánto trabajo requiere y cómo cada espacio contribuye al desarrollo de las competencias.</p>
+      <p data-reveal>Una asignatura puede introducir una competencia, otra profundizarla y una posterior integrar su aplicación; por ello, la coherencia debe analizarse como una trayectoria y no como una suma de asignaturas.</p>
+      <p data-reveal>Para construir una malla coherente deben articularse tres decisiones: la organización y secuencia de las asignaturas, los créditos y la carga académica, y la progresión de las competencias. Estas decisiones son interdependientes: modificar una asignatura puede afectar prerrequisitos, carga o desarrollo de competencias.</p>
+      <p data-reveal>Por ello, la pregunta central no es cuántas asignaturas tiene el programa, sino si su estructura permite avanzar progresivamente hacia el perfil de egreso. En los siguientes subtemas se analizará cómo organizar y secuenciar las asignaturas, distribuir la carga académica y hacer visible la progresión mediante la articulación curricular y la matriz de tributación.</p>
+
+      <section class="ua-seccion" id="tema3-1" data-reveal>
+        <h2 class="ua-seccion__titulo">3.1 Organización y secuencia de asignaturas</h2>
       </section>
 
-      <div data-ova-hueco="contenido de la sección {{NUM}}.1: el componente lo elige /ova-maquetar desde el DI" data-reveal></div>
+      <p data-reveal>¿Cómo decidiría usted qué asignaturas deben formar parte de una malla curricular y en qué momento deberían aparecer? Esta pregunta permite evitar un error frecuente: construir la malla a partir de las asignaturas que ya existen y después intentar justificar su presencia. En un currículo por competencias, el punto de partida es diferente: primero se define qué debe lograr el egresado y, a partir de ello, se organiza una trayectoria formativa que ofrezca oportunidades suficientes para desarrollar esos desempeños.</p>
+      <!-- Bloque destacado - fondo de color (catálogo) · «Importante», icono de admiración como pide la Nota del Word -->
+      <div class="ova-destacados ova-destacados--color" data-reveal>
+        <div class="ova-destacado ova-destacado--importante">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:alert-circle-outline"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Importante</strong></h4>
+            <p>La malla no debe construirse para justificar asignaturas existentes. Primero, se define qué debe lograr el egresado y después se organiza la trayectoria formativa que permite alcanzarlo.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparativo (catálogo), neutro -->
+      <h3 class="ova-rotulo" data-reveal><strong>Conviene distinguir entre plan de estudios y malla curricular:</strong></h3>
+      <div class="ova-vs" data-reveal>
+        <div class="ova-vs__card">
+          <span class="ova-vs__card-tag"><strong>Plan de estudios</strong></span>
+          <p>Establece la estructura formal del programa: asignaturas o módulos, créditos, horas, prerrequisitos y otros elementos definidos por la institución.</p>
+        </div>
+        <div class="ova-vs__divider">VS</div>
+        <div class="ova-vs__card ova-vs__card--alt">
+          <span class="ova-vs__card-tag"><strong>Malla curricular</strong></span>
+          <p>Es una representación que permite visualizar esa estructura y, especialmente, identificar cómo se distribuyen las experiencias formativas a lo largo de los periodos.</p>
+        </div>
+      </div>
+
+      <p data-reveal>Esta visualización facilita identificar vacíos, concentraciones excesivas y relaciones de dependencia que pueden pasar inadvertidas cuando la información se revisa únicamente en una tabla.</p>
+      <p data-reveal>Una primera decisión consiste en determinar cómo se distribuyen las experiencias formativas en áreas o componentes curriculares.</p>
+
+      <!-- Acordeón (catálogo): «Ítem N» no se muestra. El párrafo siguiente va fuera del acordeón (arquitecto, 2026-11-23). -->
+      <h3 class="ova-rotulo" data-reveal><strong>En el pregrado peruano existen elementos establecidos por la Ley Universitaria:</strong></h3>
+<p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Haga clic en cada franja para ver la información.</p>
+      <div class="ova-acordeon" data-reveal>
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head"><span><strong>Requisitos crediticios y tipos de estudios</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><p>Por ejemplo, los estudios generales son obligatorios y deben comprender no menos de 35 créditos; además, los estudios de pregrado comprenden estudios específicos y de especialidad.</p></div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><strong>Autonomía y organización institucional</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><p>Sobre esta base normativa, cada universidad organiza la estructura de su programa de acuerdo con su modelo educativo, perfil de egreso y características de la profesión (Ley N.º 30220, 2014, arts. 40 y 41).</p></div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><strong>Función formativa sobre la denominación</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><p>Por ello, no conviene clasificar una asignatura únicamente por su nombre. La pregunta más útil es: ¿qué función cumple esta asignatura en el desarrollo del perfil de egreso? Una misma denominación puede cumplir funciones diferentes según el programa, mientras que asignaturas con nombres distintos pueden contribuir a una misma competencia.</p></div></div>
+        </div>
+      </div>
+
+      <p data-reveal>La clasificación debe ayudar a comprender la trayectoria formativa, no convertirse en un ejercicio administrativo.</p>
+
+      <!-- Tabla simple (catálogo) · Tabla 8, con su nota del DI -->
+      <figure class="ova-apa-tabla" data-reveal>
+        <figcaption>
+          <span class="ova-apa-tabla__num"><strong>Tabla 8</strong></span>
+          <span class="ova-apa-tabla__titulo"><em>Áreas de formación, función curricular y criterio de asignación</em></span>
+        </figcaption>
+        <div class="ova-tabla"><table>
+          <thead><tr><th><strong>Área de formación</strong></th><th><strong>Función en el desarrollo del perfil</strong></th><th><strong>Criterio para asignar una asignatura</strong></th></tr></thead>
+          <tbody>
+            <tr><td><strong>Estudios generales (pregrado)</strong></td><td>Formación integral y desarrollo de competencias comunes.</td><td>Contribuye a aprendizajes transversales definidos por la institución.</td></tr>
+            <tr><td><strong>Estudios específicos</strong></td><td>Fundamentos disciplinares del campo profesional.</td><td>Aporta conocimientos y desempeños base necesarios para avanzar en la especialidad.</td></tr>
+            <tr><td><strong>Estudios de especialidad</strong></td><td>Desarrollo de desempeños profesionales propios del programa.</td><td>Contribuye directamente a competencias específicas del perfil.</td></tr>
+            <tr><td><strong>Investigación</strong></td><td>Desarrollo progresivo de capacidades para investigar.</td><td>Genera desempeños y productos relacionados con la investigación y el trabajo de grado.</td></tr>
+            <tr><td><strong>Prácticas o experiencias profesionales</strong></td><td>Acercamiento al desempeño en contextos auténticos.</td><td>Permite movilizar aprendizajes en situaciones profesionales reales o simuladas.</td></tr>
+            <tr><td><strong>Electivas y complementarias</strong></td><td>Flexibilidad y profundización.</td><td>Amplía o profundiza la formación sin comprometer los logros esenciales del perfil.</td></tr>
+          </tbody>
+        </table></div>
+        <p class="ova-apa-tabla__nota"><strong>Nota.</strong> Las denominaciones y organización de las áreas pueden variar según la institución, el nivel de formación y las características del programa. La tabla presenta funciones curriculares orientativas, no una clasificación universal.</p>
+      </figure>
+
+      <p data-reveal>Una vez definidas las áreas, corresponde decidir qué debe ocurrir antes, qué puede desarrollarse de manera paralela y qué requiere aprendizajes previos. La secuencia debe mostrar una progresión de los desempeños esperados y articular tres lógicas:</p>
+
+      <!-- Imagen con leyenda (catálogo) · Figura 4 (rotulada «Figura» en el Word), como en los temas 1 y 2; se desliza en celular. Texto alternativo oficial. -->
+      <figure class="ova-figura ova-figura--plana ova-figura--desliza" data-reveal>
+        <div class="ova-figura__hero">
+          <img src="assets/img/curso/04_fig_curriculoyformacionporcompetenciaseneducacionsuperior.webp"
+               alt="Esquema de tres recuadros conectados por una línea: Disciplinar, relacionada con la estructura del conocimiento; Psicopedagógica, vinculada con la construcción progresiva del aprendizaje; y Profesional, centrada en el aumento de complejidad y autonomía." />
+        </div>
+        <figcaption class="ova-figura__leyenda">
+          <strong>Figura 4.</strong> <em>Articulación de las lógicas disciplinar, psicopedagógica y profesional.</em>
+        </figcaption>
+      </figure>
+
+      <p data-reveal>Los prerrequisitos deben responder a dependencias reales de aprendizaje, no solo a decisiones administrativas. Para verificarlos, pregúntese: ¿qué desempeño de la asignatura posterior sería difícil desarrollar sin los aprendizajes de la anterior? También conviene evitar cadenas innecesariamente largas que puedan bloquear la trayectoria estudiantil.</p>
+      <p data-reveal>La progresión debe incluir las competencias transversales y, cuando corresponda, la investigación, distribuyendo oportunidades para desarrollar capacidades como formular problemas, analizar información y comunicar resultados.</p>
+
+      <!-- Tarjetas con icono - izquierda (catálogo): «Tarjeta N» no se muestra; el Word trae dos tarjetas. EDITORIAL · los iconos son decorativos. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Antes de cerrar la malla, verifique:</strong></h3>
+      <div class="ova-tarjetas" data-reveal>
+        <div class="ova-tarjeta">
+          <div class="ova-tarjeta__cuerpo">
+            <div class="ova-tarjeta__avatar ova-tarjeta__avatar--icono"><iconify-icon icon="mdi:help-circle-outline"></iconify-icon></div>
+            <h4><strong>Preguntas clave</strong></h4>
+            <p>¿Cada asignatura tiene una función relacionada con el perfil?, ¿la secuencia aumenta la complejidad?, ¿los prerrequisitos son necesarios? y ¿las competencias cuentan con suficientes oportunidades de desarrollo?</p>
+          </div>
+        </div>
+        <div class="ova-tarjeta">
+          <div class="ova-tarjeta__cuerpo">
+            <div class="ova-tarjeta__avatar ova-tarjeta__avatar--icono"><iconify-icon icon="mdi:check-decagram-outline"></iconify-icon></div>
+            <h4><strong>Malla coherente</strong></h4>
+            <p>Una malla coherente no es aquella en la que simplemente “caben” las asignaturas, sino aquella cuya trayectoria puede justificarse por lo que el estudiante necesita aprender y demostrar.</p>
+          </div>
+        </div>
+      </div>
+
+      <p data-reveal>La siguiente decisión será determinar cuánto trabajo académico corresponde a cada espacio formativo, lo que conduce al análisis de los créditos y la carga académica.</p>
+
+      <section class="ua-seccion" id="tema3-2" data-reveal>
+        <h2 class="ua-seccion__titulo">3.2 Créditos y carga académica en la malla curricular</h2>
+      </section>
+
+      <p data-reveal>¿Qué significa realmente que una asignatura tenga tres, cuatro o cinco créditos?</p>
+
+      <!-- Pestañas (catálogo), con icono como pide la Nota del Word. «Pestaña N» no se muestra. El llamado va literal, en tú (ERRORES-ORIGEN-2026-11-22 F7, Corregir, no bloquea). EDITORIAL · iconos decorativos. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Créditos</strong></h3>
+<p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Selecciona cada pestaña para ampliar la información.</p>
+      <div class="ova-tabs ova-tabs--pildoras" data-reveal>
+        <div class="ova-tabs__nav">
+          <button class="ova-tabs__btn is-active"><iconify-icon icon="mdi:book-open-variant"></iconify-icon> <strong>Definición</strong></button>
+          <button class="ova-tabs__btn"><iconify-icon icon="mdi:scale-balance"></iconify-icon> <strong>Equivalencia</strong></button>
+          <button class="ova-tabs__btn"><iconify-icon icon="mdi:flag-outline"></iconify-icon> <strong>Punto de partida</strong></button>
+        </div>
+        <div class="ova-tabs__panels">
+          <div class="ova-tabs__panel is-active"><p>Los créditos representan una decisión curricular sobre la dedicación académica prevista y deben guardar relación con los aprendizajes, las actividades y las evidencias que se espera desarrollar.</p></div>
+          <div class="ova-tabs__panel"><p>En el marco peruano, la Ley Universitaria establece que el crédito académico equivale a un mínimo de 16 horas lectivas de teoría o al doble de horas de práctica (Ley N.º 30220, 2014, art. 39).</p></div>
+          <div class="ova-tabs__panel"><p>Esta referencia constituye el punto de partida normativo, pero no es suficiente para determinar la carga real que asumirá el estudiante durante una asignatura.</p></div>
+        </div>
+      </div>
+
+      <p data-reveal>Para diseñar la malla es necesario distinguir dos aspectos relacionados: cómo se determina formalmente el crédito según la normativa y los criterios institucionales, y cuánto trabajo académico requiere realmente el estudiante para alcanzar los resultados de aprendizaje. La carga puede incluir actividades sincrónicas, trabajo dirigido, estudio independiente, lecturas, prácticas, preparación de productos y otras tareas.</p>
+
+      <!-- Bloque con Cifra destacada - clara (catálogo): «Cifra:», «Qué mide:», «Etiqueta:» y «Texto:» son etiquetas del campo y no se muestran. Sin «Fuente:» en el Word: no va su párrafo. El ejemplo de horas va literal. -->
+      <div class="ova-indicador ova-indicador--claro" data-reveal>
+        <div class="ova-indicador__cifra">
+          <p class="ova-indicador__num"><span data-ova-contar>4</span><small>créditos</small></p>
+          <p class="ova-indicador__mide">ocho semanas, 11 horas semanales.</p>
+        </div>
+        <div class="ova-indicador__cuerpo">
+          <p class="ova-indicador__etiqueta">Ejemplo de cálculo y pertinencia de la carga lectiva</p>
+          <p>Por ejemplo, en esta asignatura se han previsto cuatro créditos, ocho semanas y una dedicación de 11 horas semanales; el sílabo registra 23 horas lectivas y 65 horas de trabajo no lectivo, para una dedicación estimada de 88 horas durante el periodo. Este dato no modifica la definición legal del crédito, sino que permite valorar si la carga prevista es coherente con las actividades y evidencias que debe desarrollar el estudiante.</p>
+        </div>
+      </div>
+
+      <!-- Tabla simple (catálogo) · Tabla 9, con su nota del DI; la primera columna no va en negrilla en el Word -->
+      <figure class="ova-apa-tabla" data-reveal>
+        <figcaption>
+          <span class="ova-apa-tabla__num"><strong>Tabla 9</strong></span>
+          <span class="ova-apa-tabla__titulo"><em>Ejemplo de cálculo y pertinencia de la carga lectiva de una asignatura</em></span>
+        </figcaption>
+        <div class="ova-tabla"><table>
+          <thead><tr><th><strong>Elemento</strong></th><th><strong>Dato de la asignatura</strong></th><th><strong>¿Para qué se revisa?</strong></th></tr></thead>
+          <tbody>
+            <tr><td>Duración</td><td>8 semanas</td><td>Determinar la distribución temporal.</td></tr>
+            <tr><td>Horas semanales</td><td>11 h</td><td>Estimar la dedicación por semana.</td></tr>
+            <tr><td>Horas lectivas</td><td>23 h</td><td>Revisar la organización de las actividades lectivas.</td></tr>
+            <tr><td>Horas no lectivas</td><td>65 h</td><td>Estimar el trabajo académico independiente.</td></tr>
+            <tr><td>Carga total estimada</td><td>88 h</td><td>Contrastar la dedicación prevista con las actividades y evidencias.</td></tr>
+            <tr><td>Créditos declarados</td><td>4</td><td>Verificar su coherencia con el criterio institucional y la normativa aplicable.</td></tr>
+          </tbody>
+        </table></div>
+        <p class="ova-apa-tabla__nota"><strong>Nota.</strong> El ejemplo muestra la relación entre créditos y carga académica de una asignatura; no propone una equivalencia universal de horas totales por crédito.</p>
+      </figure>
+
+      <!-- Comparativo (catálogo), neutro -->
+      <h3 class="ova-rotulo" data-reveal><strong>Dos asignaturas con el mismo número de créditos no necesariamente demandan las mismas actividades:</strong></h3>
+      <div class="ova-vs" data-reveal>
+        <div class="ova-vs__card">
+          <span class="ova-vs__card-tag"><strong>Actividades asignatura 1</strong></span>
+          <p>Puede concentrar análisis de lecturas y producción escrita</p>
+        </div>
+        <div class="ova-vs__divider">VS</div>
+        <div class="ova-vs__card ova-vs__card--alt">
+          <span class="ova-vs__card-tag"><strong>Actividades asignatura 2</strong></span>
+          <p>Puede requerir prácticas, resolución de problemas, trabajo de campo o elaboración de un proyecto.</p>
+        </div>
+      </div>
+
+      <p data-reveal>Por eso, asignar créditos de manera uniforme solo porque todas las asignaturas deben “verse equilibradas” puede ocultar diferencias importantes en la carga real.</p>
+      <p data-reveal>La revisión debe comenzar por el resultado de aprendizaje. Pregúntese: ¿qué debe ser capaz de hacer el estudiante?, ¿qué actividades necesita realizar para lograrlo?, ¿qué evidencia deberá producir y cuánto trabajo razonablemente requiere? A partir de estas respuestas se puede valorar si la cantidad de créditos asignada tiene sentido.</p>
+      <p data-reveal>Este razonamiento también permite revisar la distribución de créditos entre periodos. Una malla puede cumplir con el número total de créditos requerido y, aun así, concentrar demasiadas asignaturas con productos complejos en un mismo ciclo. Por eso conviene entender la carga del periodo como un conjunto y no solamente asignatura por asignatura.</p>
+      <!-- Ilustración explicativa de cuerpo (catálogo): un mismo ciclo sobrecargado aunque se cumple el total de créditos (P959). Rótulos literales de P959.
+           Sin pie: repetía el párrafo de arriba (arquitecto, 2026-11-23). EDITORIAL · el texto alternativo no viene del DI. Guion en insumos/ILUSTRACIONES.md (aprobada 2026-11-23) -->
+      <figure class="ova-ilustracion" data-reveal>
+        <img src="assets/img/curso/ilustracion-carga-ciclo.svg"
+             alt="Una malla curricular de cinco columnas, una por ciclo. Cuatro columnas tienen tres asignaturas y, en una de ellas, un trabajo con gráfico. La columna del centro, resaltada en amarillo, tiene seis asignaturas, cada una con su trabajo, y se sale por arriba del tablero. A la derecha, un círculo con una marca de visto bueno. Debajo, los rótulos: un mismo ciclo y número total de créditos requerido." />
+      </figure>
+
+      <!-- Bloque con Cifra destacada - clara (catálogo), la misma pieza de la cifra anterior; sin flecha: el Word dice «y», no un antes y un después. Las etiquetas de campo no se muestran. -->
+      <div class="ova-indicador ova-indicador--claro" data-reveal>
+        <div class="ova-indicador__cifra">
+          <p class="ova-indicador__num"><span data-ova-contar>35</span> <small>y</small> <span data-ova-contar>165</span> <small>créditos</small></p>
+          <p class="ova-indicador__mide">Estudios generales frente a los específicos y de especialidad, respectivamente.</p>
+        </div>
+        <div class="ova-indicador__cuerpo">
+          <p class="ova-indicador__etiqueta">Mínimos establecidos de créditos</p>
+          <p>Además de revisar la coherencia interna de cada asignatura, el equipo curricular debe comprobar que el plan cumpla los mínimos establecidos para el nivel de formación. En pregrado, los estudios generales deben comprender como mínimo 35 créditos y los estudios específicos y de especialidad no pueden ser inferiores a 165 créditos. En posgrado, la Ley establece como mínimos 24 créditos para diploma de especialización, 48 para maestría y 64 para doctorado.</p>
+          <p class="ova-indicador__fuente"><strong>Fuente:</strong> Ley N.º 30220, 2014, arts. 41–43.</p>
+        </div>
+      </div>
+
+      <p data-reveal>Estos valores son condiciones normativas, no metas que deban utilizarse para distribuir automáticamente los créditos entre asignaturas. Una vez verificado el cumplimiento de los mínimos aplicables, corresponde justificar cómo se distribuye la formación de acuerdo con el perfil de egreso, las competencias y las características del programa.</p>
+
+      <!-- Bloque destacado - fondo de color (catálogo) · «Error frecuente», icono de equis en un círculo como pide la Nota. Lleva solo su primer párrafo; los siguientes van como cuerpo (arquitecto, 2026-11-23). -->
+      <div class="ova-destacados ova-destacados--color" data-reveal>
+        <div class="ova-destacado ova-destacado--error">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:close-circle-outline"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Error frecuente</strong></h4>
+            <p>Distribuir los créditos de manera uniforme sin analizar la carga real. El hecho de que varias asignaturas tengan cuatro créditos no significa que deban requerir exactamente las mismas actividades ni producir evidencias de igual complejidad.</p>
+          </div>
+        </div>
+      </div>
+
+      <p data-reveal>La carga académica definida en el plan es una estimación que debe contrastarse con la dedicación real del estudiante durante la implementación. La institución puede recoger esta información mediante encuestas, registros de dedicación, entrevistas u otros mecanismos de seguimiento.</p>
+      <p data-reveal>Si se identifica una diferencia persistente entre la carga prevista y la real, conviene revisar las actividades, las evidencias, las instrucciones o la distribución de contenidos.</p>
+
+      <!-- Listado de pasos con tarjetas (catálogo): seis pasos, aunque la pieza es para 2 a 4 (gana el rótulo del Word, arquitecto 2026-11-23). «Paso N» no se muestra; el número lo pone el componente. EDITORIAL · iconos decorativos. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Antes de aprobar la malla, verifique que:</strong></h3>
+      <div class="ova-escenas" data-reveal>
+        <div class="ova-escena">
+          <div class="ova-escena__marca"><span class="ova-escena__num">01</span><span class="ova-escena__icono"><iconify-icon icon="mdi:scale-balance"></iconify-icon></span></div>
+          <div><h3 class="ova-escena__titulo"><strong>Verificación normativa</strong></h3><p class="ova-escena__texto">Los créditos respondan a los criterios normativos e institucionales.</p></div>
+        </div>
+        <div class="ova-escena">
+          <div class="ova-escena__marca"><span class="ova-escena__num">02</span><span class="ova-escena__icono"><iconify-icon icon="mdi:clock-outline"></iconify-icon></span></div>
+          <div><h3 class="ova-escena__titulo"><strong>Diferenciación de horas</strong></h3><p class="ova-escena__texto">Las horas lectivas y no lectivas estén claramente diferenciadas.</p></div>
+        </div>
+        <div class="ova-escena">
+          <div class="ova-escena__marca"><span class="ova-escena__num">03</span><span class="ova-escena__icono"><iconify-icon icon="mdi:link-variant"></iconify-icon></span></div>
+          <div><h3 class="ova-escena__titulo"><strong>Coherencia de dedicación</strong></h3><p class="ova-escena__texto">La dedicación sea coherente con los resultados de aprendizaje y evidencias.</p></div>
+        </div>
+        <div class="ova-escena">
+          <div class="ova-escena__marca"><span class="ova-escena__num">04</span><span class="ova-escena__icono"><iconify-icon icon="mdi:calendar-range"></iconify-icon></span></div>
+          <div><h3 class="ova-escena__titulo"><strong>Balance entre periodos</strong></h3><p class="ova-escena__texto">La distribución entre periodos evite concentraciones innecesarias.</p></div>
+        </div>
+        <div class="ova-escena">
+          <div class="ova-escena__marca"><span class="ova-escena__num">05</span><span class="ova-escena__icono"><iconify-icon icon="mdi:sigma"></iconify-icon></span></div>
+          <div><h3 class="ova-escena__titulo"><strong>Cumplimiento del total</strong></h3><p class="ova-escena__texto">El total cumpla los mínimos correspondientes al nivel de formación.</p></div>
+        </div>
+        <div class="ova-escena">
+          <div class="ova-escena__marca"><span class="ova-escena__num">06</span><span class="ova-escena__icono"><iconify-icon icon="mdi:account-check-outline"></iconify-icon></span></div>
+          <div><h3 class="ova-escena__titulo"><strong>Validación con la experiencia</strong></h3><p class="ova-escena__texto">Exista algún mecanismo para contrastar posteriormente la estimación con la experiencia real del estudiante.</p></div>
+        </div>
+      </div>
+
+      <p data-reveal>Así, la asignación de créditos deja de ser una operación mecánica cuando puede explicarse por qué cada espacio formativo requiere determinada dedicación y cómo esta contribuye al logro del perfil de egreso. Con esto es posible pasar de preguntar: “¿cuánto pesa cada asignatura?” a una cuestión más relevante: “¿cómo sabemos que, en conjunto, la malla desarrolla progresivamente las competencias del perfil?”. Esta es la función de la articulación y progresión de las competencias.</p>
+
+      <section class="ua-seccion" id="tema3-3" data-reveal>
+        <h2 class="ua-seccion__titulo">3.3 Articulación y progresión de las competencias en la malla curricular</h2>
+      </section>
+
+      <p data-reveal>¿Cómo comprobar que una malla no solo contiene las asignaturas correctas, sino que realmente conduce al perfil de egreso? La articulación permite identificar dónde se desarrolla cada competencia y qué asignaturas tienen responsabilidad sobre ella; la progresión permite verificar que esa contribución avance hacia desempeños de mayor complejidad, integración y autonomía.</p>
+
+      <!-- Tarjetas con icono - izquierda (catálogo): «Tarjeta N» no se muestra; el Word trae dos tarjetas. EDITORIAL · los iconos son decorativos. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Para hacer visible esta relación se utiliza la matriz de tributación, también denominada matriz de articulación o mapa curricular de competencias:</strong></h3>
+      <div class="ova-tarjetas" data-reveal>
+        <div class="ova-tarjeta">
+          <div class="ova-tarjeta__cuerpo">
+            <div class="ova-tarjeta__avatar ova-tarjeta__avatar--icono"><iconify-icon icon="mdi:table-large"></iconify-icon></div>
+            <h4><strong>Tabla de doble entrada</strong></h4>
+            <p>Se organiza como una tabla de doble entrada: en las filas se ubican las asignaturas o experiencias formativas y en las columnas, las competencias del perfil. En cada intersección se registra la contribución y, cuando la institución lo establece, su nivel de desarrollo.</p>
+          </div>
+        </div>
+        <div class="ova-tarjeta">
+          <div class="ova-tarjeta__cuerpo">
+            <div class="ova-tarjeta__avatar ova-tarjeta__avatar--icono"><iconify-icon icon="mdi:stairs"></iconify-icon></div>
+            <h4><strong>Escala</strong></h4>
+            <p>Una institución puede utilizar una escala como I – Inicia, D – Desarrolla y L – Logra/Integra. Estas categorías no constituyen una escala normativa universal; lo importante es que la institución defina su significado y la aplique de manera consistente.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabla simple (catálogo) · Tabla 10, con su nota del DI; la primera columna no va en negrilla en el Word -->
+      <figure class="ova-apa-tabla ova-apa-tabla--angosta" data-reveal>
+        <figcaption>
+          <span class="ova-apa-tabla__num"><strong>Tabla 10</strong></span>
+          <span class="ova-apa-tabla__titulo"><em>Escala I – Inicia, D – Desarrolla y L – Logra/Integra</em></span>
+        </figcaption>
+        <div class="ova-tabla"><table>
+          <thead><tr><th><strong>Nivel</strong></th><th><strong>Sentido de la contribución</strong></th></tr></thead>
+          <tbody>
+            <tr><td>I – Inicia</td><td>Introduce la competencia y permite desempeños iniciales en situaciones estructuradas y con acompañamiento.</td></tr>
+            <tr><td>D – Desarrolla</td><td>Amplía la competencia mediante desempeños de mayor complejidad y progresiva autonomía.</td></tr>
+            <tr><td>L – Logra/Integra</td><td>Ofrece oportunidades para demostrar la competencia de manera integrada, con el nivel esperado al finalizar la formación.</td></tr>
+          </tbody>
+        </table></div>
+        <p class="ova-apa-tabla__nota"><strong>Nota.</strong> Las denominaciones pueden variar según la institución. Lo fundamental es que los niveles estén definidos y se utilicen de manera consistente.</p>
+      </figure>
+
+      <p data-reveal>La matriz puede leerse en dos direcciones: por columnas, permite preguntar “¿dónde y cómo se desarrolla esta competencia?”; por filas, “¿qué aporta esta asignatura al perfil?”.</p>
+      <p data-reveal>Un error frecuente es marcar casi todas las asignaturas con todas las competencias, lo que dificulta identificar responsabilidades reales. Si una asignatura aparece asociada a una competencia, su sílabo debería permitir explicar esa relación mediante resultados de aprendizaje, actividades o evidencias.</p>
+      <p data-reveal>Además, que una competencia aparezca en varios momentos no significa repetir el mismo aprendizaje: la progresión debe mostrar un aumento en complejidad y autonomía, desde situaciones estructuradas hacia la integración de recursos y la resolución de situaciones abiertas. Por ello, cada marca de la matriz debe poder justificarse con una contribución concreta y evidencia que la respalde.</p>
+      <p data-reveal>Considere este ejemplo simplificado:</p>
+
+      <!-- Tabla simple (catálogo) · Tabla 11; sin nota ni fuente en el Word -->
+      <figure class="ova-apa-tabla" data-reveal>
+        <figcaption>
+          <span class="ova-apa-tabla__num"><strong>Tabla 11</strong></span>
+          <span class="ova-apa-tabla__titulo"><em>Ejemplo de uso e interpretación de la matriz de tributación</em></span>
+        </figcaption>
+        <div class="ova-tabla"><table>
+          <thead><tr><th><strong>Competencia</strong></th><th><strong>Primer momento</strong></th><th><strong>Desarrollo intermedio</strong></th><th><strong>Momento integrador</strong></th></tr></thead>
+          <tbody>
+            <tr><td><strong>Diseña experiencias de aprendizaje</strong></td><td>Identifica componentes y criterios.</td><td>Diseña propuestas para situaciones específicas.</td><td>Diseña, implementa y justifica una experiencia completa.</td></tr>
+            <tr><td><strong>Evalúa aprendizajes</strong></td><td>Reconoce técnicas e instrumentos.</td><td>Selecciona instrumentos según propósito.</td><td>Diseña un sistema de evaluación y analiza sus resultados.</td></tr>
+            <tr><td><strong>Investiga problemas educativos</strong></td><td>Formula preguntas iniciales.</td><td>Construye un problema y selecciona procedimientos.</td><td>Desarrolla y sustenta una investigación.</td></tr>
+          </tbody>
+        </table></div>
+      </figure>
+
+      <p data-reveal>La competencia permanece a lo largo de la trayectoria, pero el desempeño esperado aumenta en complejidad, integración y autonomía. Por ello, la matriz debe poder relacionarse con los sílabos mediante una secuencia de trazabilidad:</p>
+
+      <!-- Imagen con leyenda (catálogo) · Figura 5 (rotulada «Figura» en el Word), como en los temas 1 y 2; se desliza en celular. Texto alternativo oficial. -->
+      <figure class="ova-figura ova-figura--plana ova-figura--desliza" data-reveal>
+        <div class="ova-figura__hero">
+          <img src="assets/img/curso/05_fig_curriculoyformacionporcompetenciaseneducacionsuperior.webp"
+               alt="Esquema de seis pasos conectados por flechas: competencia, asignatura, resultado de aprendizaje, actividad, evidencia y criterio de evaluación." />
+        </div>
+        <figcaption class="ova-figura__leyenda">
+          <strong>Figura 5.</strong> <em>Secuencia de trazabilidad entre la matriz y el sílabo.</em>
+        </figcaption>
+      </figure>
+
+      <p data-reveal>Si una asignatura declara desarrollar una competencia, pero sus resultados o evaluaciones no exigen el desempeño correspondiente, la contribución debe revisarse. La pregunta clave deja de ser “¿aparece la competencia en la matriz?” y pasa a ser “¿dónde aprende, practica y demuestra el estudiante esta competencia?”.</p>
+
+      <!-- Bloque destacado - fondo oscuro (catálogo), la variante de marca de los temas 1 y 2; icono de bombillo como pide la Nota.
+           Lleva solo su primer párrafo (el caso); los siguientes van como cuerpo (arquitecto, 2026-11-23). -->
+      <div class="ova-destacados ova-destacados--oscuro ova-destacados--marca" data-reveal>
+        <div class="ova-destacado">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Reto de cierre de la unidad</strong></h4>
+            <p>Una universidad presenta el rediseño de su programa de Educación Inicial Intercultural Bilingüe. El perfil declara nueve competencias, pero tres de las relacionadas con la enseñanza en contextos bilingües aparecen principalmente en asignaturas de los últimos ciclos. La matriz muestra pocas oportunidades de desarrollo temprano y el programa cuenta con una sola asignatura de lengua originaria en el segundo ciclo.</p>
+          </div>
+        </div>
+      </div>
+
+      <p data-reveal>Una matriz útil no es aquella en la que todo se relaciona con todo. Es necesario identificar qué asignaturas tienen una responsabilidad principal, cómo cambia el desempeño entre los ciclos y qué evidencia respalda cada contribución.</p>
+      <!-- Ilustración explicativa de cuerpo (catálogo): las competencias bilingües llegan en los últimos ciclos (P1044, caso del reto). Rótulos literales de P1044.
+           EDITORIAL · el pie y el texto alternativo no vienen del DI; el número de baldosas es esquemático. Guion en insumos/ILUSTRACIONES.md (aprobada 2026-11-23) -->
+      <figure class="ova-ilustracion" data-reveal>
+        <img src="assets/img/curso/ilustracion-bilingue-ultimos-ciclos.svg"
+             alt="Un camino de diez baldosas, una por ciclo, y una persona al comienzo. Sobre las primeras baldosas hay lugares vacíos, con borde punteado; sobre la segunda, un solo libro. Sobre las tres últimas, un panel amarillo con tres pares de globos de diálogo: las competencias de la enseñanza en contextos bilingües. Debajo, los rótulos: segundo ciclo y últimos ciclos." />
+        <figcaption>Tres competencias de la enseñanza en contextos bilingües aparecen principalmente en los últimos ciclos; hay una sola asignatura de lengua originaria, en el segundo ciclo.</figcaption>
+      </figure>
+      <p data-reveal>Esta revisión debe realizarse de manera colegiada y puede complementarse con hitos integradores, como proyectos, prácticas, portafolios o trabajos de investigación, en los que el estudiante movilice varios aprendizajes para resolver situaciones complejas.</p>
+
+      <!-- Acordeón (catálogo): «Ítem N» no se muestra; el mismo acordeón de 3.1. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Verificación, diagnóstico y prospección de la malla curricular</strong></h3>
+<p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Haga clic en cada franja para ver la información.</p>
+      <div class="ova-acordeon" data-reveal>
+        <div class="ova-acordeon__item is-open">
+          <button class="ova-acordeon__head"><span><strong>Antes de aprobar la malla, verifique:</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><p>¿Cada competencia tiene una trayectoria identificable?, ¿las contribuciones están respaldadas por resultados y evidencias?, ¿la progresión aumenta en complejidad y autonomía?, ¿existen vacíos o concentraciones innecesarias? Una malla articulada es aquella en la que puede explicarse, con evidencia, qué responsabilidad tiene cada espacio formativo y cómo contribuye progresivamente al perfil de egreso.</p></div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><strong>Antes de proponer modificaciones, analice la situación</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><p>¿Qué problemas de articulación o progresión identifica? ¿Qué información solicitaría para confirmar su diagnóstico? ¿Qué cambios priorizaría en la malla y cómo justificaría esas decisiones? ¿Qué evidencias permitirían comprobar posteriormente que la trayectoria formativa mejoró?</p></div></div>
+        </div>
+        <div class="ova-acordeon__item">
+          <button class="ova-acordeon__head"><span><strong>Conserve su análisis</strong></span><iconify-icon class="ova-acordeon__chev" icon="mdi:chevron-down"></iconify-icon></button>
+          <div class="ova-acordeon__body"><div class="ova-acordeon__body-inner"><p>La capacidad de pasar de una matriz a un diagnóstico curricular será necesaria cuando, en la unidad 3, corresponda evaluar la pertinencia de un plan curricular vigente y proponer mejoras.</p></div></div>
+        </div>
+      </div>
+
+      <p data-reveal>A lo largo de esta unidad usted ha recorrido una secuencia de decisiones: analizar el contexto, construir el perfil de egreso, organizar la malla, distribuir créditos y hacer visible la articulación y progresión de las competencias. El propósito no ha sido aprender a llenar matrices, sino comprender cómo se toman y se justifican las decisiones que dan coherencia al currículo.</p>
+      <p data-reveal>El siguiente paso será descender del nivel macrocurricular al diseño de una asignatura. En la unidad 2, usted tomará esa estructura curricular como punto de partida para articular resultados de aprendizaje, evaluación y experiencias formativas mediante el enfoque de <em>backward design.</em></p>
+
+      <!-- Pregunta (catálogo): «Contexto:», «Enunciado:», «(correcta)», «Acierto:» y «Error:» no se muestran. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Interpretación y sentido de la matriz de tributación en la malla curricular</strong></h3>
+<p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Seleccione la opción correcta.</p>
+      <div class="ova-quiz" data-reveal>
+        <p class="ova-quiz__contexto">Durante el proceso de auditoría curricular de un programa de pregrado, el comité revisor observa que la matriz de tributación presenta marcas de contribución en la intersección de casi todas las asignaturas con todas las competencias del perfil de egreso. Al revisar los sílabos, no se encuentran resultados de aprendizaje ni evidencias que respalden dichas asignaciones en la mayoría de los casos.</p>
+        <h3 class="ova-quiz__question">A partir del texto analizado, ¿cuál es el criterio técnico para construir y validar adecuadamente una matriz de tributación que refleje una auténtica progresión curricular?</h3>
+        <div class="ova-quiz__opts">
+          <button class="ova-quiz__opt" data-correct="true"><strong>A.</strong> Vincular cada marca de la matriz con responsabilidades explícitas en el sílabo, evidenciando un incremento progresivo en la complejidad, autonomía e integración del desempeño.</button>
+          <button class="ova-quiz__opt" data-correct="false"><strong>B.</strong> Asegurar que todas las asignaturas del plan de estudios asuman una responsabilidad directa sobre la totalidad de las competencias del perfil de egreso.</button>
+          <button class="ova-quiz__opt" data-correct="false"><strong>C.</strong> Adoptar de forma obligatoria la escala I–D–L como norma universal para estandarizar las matrices de tributación en la educación superior.</button>
+          <button class="ova-quiz__opt" data-correct="false"><strong>D.</strong> Priorizar la lectura por filas para verificar cuántas competencias logra desarrollar una sola asignatura al finalizar el periodo académico.</button>
+        </div>
+        <div class="ova-quiz__feedback"
+             data-correct="La matriz de tributación debe reflejar una atribución real y justificada de responsabilidades. Cada intersección debe respaldarse en el sílabo mediante resultados de aprendizaje, actividades y evidencias, mostrando además una progresión que evolucione desde niveles iniciales estructurados hacia actuaciones con mayor complejidad, integración y autonomía."
+             data-wrong="Marcar todas las asignaturas con todas las competencias es un error frecuente que invisibiliza las responsabilidades reales del plan de estudios. Asimismo, la escala I–D–L no constituye una norma universal obligatoria; lo indispensable es que la institución defina y aplique sus niveles de manera consistente. Por último, si bien la lectura por filas permite observar el aporte de una asignatura, el valor de la matriz radica en articular la trayectoria completa de cada competencia a lo largo del programa."></div>
+      </div>
+
+<!-- ova:extras -->
+<style>
+  /* Estilo propio de esta pantalla (andina/gov-u01-dcc · tema3). No toca el motor ni la piel.
+     Arreglos de la serie de los temas 1 y 2 mientras llegan a la piel o al catálogo (KIT-022):
+     1. Las pestañas en píldora se apilan en celular, una por fila y con el rótulo completo.
+     2. Las figuras del diseñador conservan 720 px y se deslizan en celular (arquitecto, 2026-11-23).
+     3. El título de un comparativo o de una lista de pasos, cerca de su pieza (28 px, como en el tema 1). */
+  @media (max-width: 720px) {
+    .ova-tabs--pildoras .ova-tabs__nav { flex-direction: column; flex-wrap: nowrap; overflow: visible; align-items: stretch; }
+    .ova-tabs--pildoras .ova-tabs__btn { width: 100%; white-space: normal; text-align: left; justify-content: flex-start; }
+    .ova-figura--desliza .ova-figura__hero { overflow-x: auto; }
+    .ova-figura--desliza .ova-figura__hero img { width: 720px; min-width: 720px; max-width: none; height: auto; }
+  }
+  .ova-rotulo + .ova-vs, .ova-rotulo + .ova-escenas { margin-top: 28px !important; }
+
+  /* Cifras destacadas (arquitecto, 2026-11-23): 40 px de los párrafos vecinos, la etiqueta en azul marca (el azul
+     medio no pasa AA a su tamaño), el texto al cuerpo de 16 px y la columna de la cifra un poco más ancha en
+     escritorio para que «35 y 165 créditos» quede en una línea, como «4 créditos». */
+  .ova-indicador { margin: 40px 0; }
+  .ova-indicador--claro .ova-indicador__etiqueta { color: var(--c-acento); }
+  .ova-indicador__cuerpo { font-size: 1rem; }
+  @media (min-width: 721px) {
+    .ova-indicador { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr); }
+  }
+  /* DISEÑO · Listado de pasos con tarjetas (arquitecto, 2026-11-23): con textos de una línea, el número sobre el
+     icono inflaba cada tarjeta; en escritorio van lado a lado y el hilo baja desde el centro de esa columna. */
+  .ova-escenas { margin-bottom: 40px; }
+  @media (min-width: 721px) {
+    .ova-escena { grid-template-columns: 160px 1fr; align-items: center; padding-block: 24px; }
+    .ova-escena__marca { flex-direction: row; justify-content: flex-start; gap: 16px; }
+    .ova-escena:not(:last-child)::after { left: 118px; }
+  }
+  /* DISEÑO · Tabla 10, de dos columnas (arquitecto, 2026-11-23): en celular cabe entera, sin el ancho mínimo de
+     620 px de las tablas APA que obligaba a deslizar y cortaba la columna del texto. */
+  @media (max-width: 720px) {
+    .ova-apa-tabla--angosta .ova-tabla table { min-width: 0; }
+  }
+</style>
